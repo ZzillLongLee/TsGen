@@ -26,7 +26,7 @@ class TrainingDataPreprocessorV2:
         self.code2vec_size = code2vec_size
 
     # This method preprocess 'trainingData' such as zero padding syntactic feature vector
-    # and generating TrainingData as Dictionary type.
+    # and generating TrainingDataGenerator as Dictionary type.
     def preprocess(self, commitList):
         projection_network = Projection_Network(self.__Maximum_Syntactic_Feature_Size,
                                                 self.__projected_syntactic_Feature_Size)

@@ -1,8 +1,8 @@
 from Seq2Seq.SummaryToSequence import SummaryToSequence
 from Seq2Seq.TestSeq2SeqWithAttention import TestSeq2SeqWithAttention
-from TrainingData.TrainingDataGeneratorV2 import TrainingDataGeneratorV2
-from TrainingData.TrainingComponentGenerator import TrainingComponentGenerator
-from TrainingData.TrainingDataPreprocessorV2 import TrainingDataPreprocessorV2
+from TrainingDataGenerator.TrainingDataGeneratorV2 import TrainingDataGeneratorV2
+from TrainingDataGenerator.TrainingComponentGenerator import TrainingComponentGenerator
+from TrainingDataGenerator.TrainingDataPreprocessorV2 import TrainingDataPreprocessorV2
 from Utils.Util import getSummaryMaximumLength
 from Utils.Util import padSequence
 import Seq2SeqEvaluator.SummaryEvaluator as summaryEvaluator
@@ -28,7 +28,7 @@ code2vec_size = 25
 
 if __name__ == '__main__':
     dataFilesPath = "Sample_Data/*.json"
-    trainingDataPath = "Outcome/TrainingData/"
+    trainingDataPath = "Outcome/TrainingDataGenerator/"
     ast2VecModelPath = "Outcome/Models/AstType.model"
     word2VecModelPath = "Outcome/Models/CodeType.model"
     astNodeDictpath = "Outcome/Models/AstNodeDictionary.json"

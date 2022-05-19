@@ -11,7 +11,7 @@ class TrainingDataPreprocessor:
         self.__TrainingData = parser.openJson(trainingDataPath)
 
     # This method preprocess 'trainingData' such as zero padding syntactic feature vector
-    # and generating TrainingData as Dictionary type.
+    # and generating TrainingDataGenerator as Dictionary type.
     def preprocess(self):
         trainingData = dict()
         MaximumSyntacticFeatureSize = self.__TrainingData['Longest_Syntactic_Feature_Size']
